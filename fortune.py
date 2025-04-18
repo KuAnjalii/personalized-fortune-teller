@@ -1,12 +1,12 @@
 import random
 
-print(f" Welcome to Kumari Anjali's Fortune Teller 21je0495 ")
+print(f"Welcome to Kumari Anjali's Fortune Teller (21je0495) 🔮")
 mood = input("How are you feeling today? (happy/sad/neutral/stressed): ").strip().lower()
 
 # Version 1.1 - Added 'stressed' mood and multiple fortunes per mood
 fortunes = {
     "happy": [
-        f"Great things await you,Kumari Anjali! Keep smiling.",
+        f"Great things await you, Kumari Anjali! Keep smiling.",
         "Your positive energy will bring wonderful opportunities today!",
         "Your happiness is contagious - spread it far and wide!"
     ],
@@ -30,6 +30,6 @@ fortunes = {
 if mood in fortunes:
     # Choose a random fortune for the given mood
     chosen_fortune = random.choice(fortunes[mood])
-    print(f" Your fortune: {chosen_fortune} ")
+    print(f"✨ Your fortune: {chosen_fortune} ✨")
 else:
     print("Sorry, I don't understand that mood. Try happy, sad, neutral, or stressed.")
